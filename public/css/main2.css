@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blue-bg{
+    background-color: rgb(1, 54, 27);
+}
+
+.light-blue{
+    background-color: #D7F0FD;
+}
+
+.grey-bg{
+    background-color: #CCCCCC;
+}
+
+.grey-bg2{
+    background-color: #EFEFEF;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.side-map{
+    max-width: 300px;
+    width: 100%;
+    height: calc(100vh - 69px);
+    overflow-y: auto;
+}
+
+.primary-nav{
+    width: calc(100% - 300px);
+}
+
+.step{
+    position: absolute;
+    z-index: 9999999999;
+    top: -15px;
+}
+
+.step p{
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.font-13{
+    font-size: 13px;
+}
+
+.font-11{
+    font-size: 11px;
+}
+
+.alpha-black{
+    background-color: rgba(0,0,0,0.6);
+    padding: 12px;
+}
+
+.position-pnav{
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.font-re p {
+    margin-bottom: 0;
+}
+
+.select-drop .dropdown-menu.show{
+    width: 300px;
+    position: absolute;
+    margin: 0px;
+    transform: translate(0px, 42px);
+    right: 0 !important;
+    top: 0;
+    left: auto !important;
+}
+
+.drop .dropdown-menu{
+    min-width: auto;
+}
+
+.position-mark{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px
+}
+input:focus , select:focus{
+    outline: none;
+}
+/* .changeColor {
+    background: #d5f0fc !important;
+        color: #000 !important;
+} */
+#map div[style*='crosshair'] {
+    cursor:alias !important;
+  } 
+
+    
+    
+/* ==========
+media query
+============ */
+
+@media screen and (max-width: 991px){
+    .side-map{
+        position: absolute;
+        z-index: 10;
+        display: none;
+    }
+    .primary-nav{
+        width: calc(100% - 0px);
+    }
+}
+@media screen and (max-width: 767px){
+.side-map{
+        height: calc(100dvh - 60px);
+    }
+}
+
+@media screen and (max-width: 577px){
+    .font-re{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px){
+
+.alpha-black {
+    padding: 10px 10px;
+}
+}
