@@ -19,7 +19,7 @@ class userController extends Controller
         $data =$request->all();
         quardinates::create($data);
         $requestMail = $request->all();
-        $to_email = "mehakamir187@gmail.com";
+        $to_email = "Wearemillenland@gmail.com";
         Mail::to($to_email)->send(new PublishSite($requestMail));
         return redirect()->route('map')->with('success', 'Site Published successfully');
     }
